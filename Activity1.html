@@ -1,0 +1,25 @@
+<!DOCTYPE html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1: The String vs. Number</title>
+</head>
+<body>
+    <h1>Activity 1: The String vs. Number</h1>
+    <p>Enter two numbers to see how JavasScript handles the "+" operation.</p>
+    <input id="txt1" type="text">+
+    <input id="txt2" type="text">
+    <button onclick="combine(txt1.value,txt2.value)">Combine</button>
+    
+    <h2>Result</h2>
+
+    <p>String: <span id="stringrel"></span> (Type: string)</p>
+    <p>Numbers: <span id="numberrel"></span> (Type: number)</p>
+    <script>
+        function combine(a, b){
+            document.getElementById("stringrel").textContent = a + b;
+            document.getElementById("numberrel").textContent = Number(a) + Number(b);
+        }
+    </script>
+</body>
+</html>
